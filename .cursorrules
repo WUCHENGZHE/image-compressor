@@ -1,0 +1,67 @@
+{
+    "rules": [
+        {
+            "name": "项目初始化",
+            "description": "项目开始前的准备工作",
+            "guidelines": [
+                "首先阅读项目根目录的README.md文件理解项目目标",
+                "如果没有README文件则创建一个完整的说明文档",
+                "在README中清晰描述功能用途、使用方法和参数说明",
+                "确保文档易于初中生用户理解和使用"
+            ]
+        },
+        {
+            "name": "技术规范",
+            "description": "Chrome扩展开发的技术要求",
+            "guidelines": [
+                "必须使用Manifest V3，禁止使用过时的V2版本",
+                "优先使用Service Workers替代Background Pages",
+                "Content Scripts遵循最小权限原则",
+                "使用TypeScript进行类型检查",
+                "所有数据传输必须使用HTTPS",
+                "实现响应式设计确保各分辨率下的体验"
+            ]
+        },
+        {
+            "name": "开发流程",
+            "description": "代码开发和问题解决流程",
+            "guidelines": [
+                "每个函数和关键代码块添加详细中文注释",
+                "实现适当的错误处理和日志记录",
+                "全面阅读相关代码文件理解功能逻辑",
+                "分析错误原因并提出解决思路",
+                "与用户多次交互调整解决方案"
+            ]
+        },
+        {
+            "name": "项目优化",
+            "description": "项目完成后的优化和总结",
+            "guidelines": [
+                "反思完成步骤并思考改进方式",
+                "更新README文件包含新功能说明",
+                "考虑使用Side Panel等高级特性",
+                "优化扩展性能包括启动时间和内存使用",
+                "确保符合Chrome Web Store发布要求"
+            ]
+        }
+    ],
+    "preferences": {
+        "language": "zh-CN",
+        "codeStyle": "typescript",
+        "documentation": "detailed",
+        "framework": {
+            "manifest": "v3",
+            "features": ["service_worker", "side_panel", "offscreen"]
+        },
+        "development": {
+            "style": "user_friendly",
+            "security": "strict",
+            "performance": "optimized"
+        },
+        "communication": {
+            "style": "proactive",
+            "role": ["chrome_expert", "product_manager"],
+            "target_user": "middle_school_student"
+        }
+    }
+} 
